@@ -1,0 +1,1928 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Neucha&display=swap');
+
+$color-light: rgba(42, 198, 211, 1);
+$color-dark: rgba(0, 134, 138, 1);
+$color-textContacts: rgba(164, 161, 161, 1);
+$color-line: rgba(196, 196, 196, 1);
+$color-text: rgba(255, 255, 255, 1);
+$color-darkContact: rgba(0, 0, 0, 1);
+$color-background: rgba(39, 37, 37, 0.7);
+$color-form: rgba(84, 83, 83, 1);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+//header
+.header{
+    display: flex;
+}
+.logo {
+    display: block;
+    border-left: 1px solid $color-line;
+    border-right: 1px solid $color-line;
+    width: 25%;
+    &__img{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+.number-one{
+    display: flex;
+    width: 20%;
+    border-right: 1px solid $color-line;
+    text-align: center;
+    align-items: center;
+    &__tel{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        color: $color-light;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+.number-two{
+    display: flex;
+    width: 20%;
+    border-right: 1px solid $color-line;
+    text-align: center;
+    align-items: center;
+    &__tel{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        color: $color-light;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+.vk{
+    display: flex;
+    width: 7%;
+    border-right: 1px solid $color-line;
+    text-align: center;
+    align-items: center;
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+.request{
+    border-right: 1px solid $color-line;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn{
+        text-decoration: none;
+        border: 0;
+        background-color: $color-dark;
+        color: $color-text;
+        width: 70%;
+        height: 70%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background-color: $color-text;
+        color: $color-dark;
+        border: 1px solid $color-darkContact;
+        transition: all 1s;
+    }
+}
+.menu{
+    border: 3px solid $color-dark;
+    list-style-type: none;
+    display: flex;
+    margin-top: 1%;
+    height: 50px;
+    &__about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        text-align: center;
+        border-right: 1px solid $color-line;
+        &__href{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $color-dark;
+        }
+    }
+    &__about:hover{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        text-align: center;
+        background-color: $color-dark;
+        transition: all 1s;
+        .menu__about__href{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-text;
+            width: 100%;
+            font-size: 18px;
+            height: 100%;
+        }
+    }
+    &__post-one{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        text-align: center;
+        &__post{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-dark;
+            width: 100%;
+            font-size: 18px;
+            height: 100%;
+        }
+    }
+    &__post-one:hover{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        text-align: center;
+        background-color: $color-dark;
+        transition: all 1s;
+        .menu__post-one__post{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-light;
+            width: 100%;
+            font-size: 18px;
+            color: $color-text;
+        }
+    }
+    &__servis{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid $color-line;
+        &__href{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $color-dark;
+        }
+    }
+    &__servis:hover{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        text-align: center;
+        background-color: $color-dark;
+        transition: all 1s;
+        .menu__servis__href{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-text;
+            width: 100%;
+            font-size: 18px;
+            height: 100%;
+        }
+    }
+    &__contacts{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid $color-line;
+        &__href{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $color-dark;
+        }
+    }
+    &__contacts:hover{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        background-color: $color-dark;
+        transition: all 1s;
+        .menu__contacts__href{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-text;
+            width: 100%;
+            font-size: 18px;
+            height: 100%;
+        }
+    }
+    &__post-two{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        text-align: center;
+        &__post{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-dark;
+            width: 100%;
+            font-size: 18px;
+            height: 100%;
+        }
+    }
+    &__post-two:hover{
+        width: 20%;
+        border-right: 1px solid $color-line;
+        text-align: center;
+        background-color: $color-dark;
+        transition: all 1s;
+        .menu__post-two__post{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            color: $color-text;
+            width: 100%;
+            font-size: 18px;
+
+        }
+    }
+}
+.main-header{
+    background-color: $color-light;
+    display: flex;
+    width: 100%;
+    margin-top: 1%;
+    background-image: url(/img/main-header.png);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 8%;
+    & p{
+        width: 55%;
+        height: 60%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: $color-text;
+        margin-top: 4%;
+    }
+    & button{
+        margin-top: 2%;
+        width: 15%;
+        height: 13%;
+        background: $color-dark;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border: 0;
+        color: $color-text;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+    & button:hover{
+        background-color: $color-text;
+        color: $color-dark;
+        transition: all 1s;
+    }
+}
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 3%;
+    color: $color-text;
+}
+
+//main-about
+.main-about{
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: $color-dark;
+    padding-top: 5%;
+}
+.main-about__one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    position: relative;
+    &__foto1{
+        width: 45%;
+        & img{
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 10%;
+        }
+        &__p2{
+            margin-top: 10%;
+            background-color: $color-dark;
+            width: 100%;
+            & p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                line-height: 35px;
+                font-weight: 600;
+                font-size: 22px;
+                letter-spacing: 0.05em;
+                color: $color-text;
+                padding: 4%;
+            }
+        }
+    }
+    &__d1{
+        width: 50%;
+        &__p1{
+            background-color: $color-dark;
+            width: 100%;
+            & p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                line-height: 30px;
+                font-weight: 600;
+                font-size: 22px;
+                letter-spacing: 0.05em;
+                color: $color-text;
+                padding: 4%;
+            }
+        }
+        & img{
+            display: block;
+            margin: 30% auto 0 auto;
+            width: 80%;
+            height: 600px;
+        }
+    }
+}
+.pluses{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    &__plus{
+        width: 30%;
+        height: 350px;
+        background-color: $color-dark;
+        & img{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20%;
+        }
+        &__st{
+            margin-top: 20%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 34px;
+            color: $color-text;
+            text-align: center;
+            padding-bottom: 20%;
+        }
+        &__bg{
+            margin-top: 10%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 34px;
+            color: $color-text;
+            text-align: center;
+            padding-bottom: 20%;
+        }
+    }
+}
+
+//servises
+.serv{
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.servises{
+    margin-top: 5%;
+    &__servises-one{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__servis{
+            margin: 0 auto;
+            background-color: $color-dark;
+            height: 320px;
+            min-width: 27%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 5%;
+            &__floor{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 8% 8% 8%;
+                & p{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 26px;
+                width: 60%;
+                color: $color-text;
+                }
+                & img{
+                    cursor: pointer;
+                    width: 90%;
+                }
+            }
+            
+        }
+    }
+}
+#prom{
+    width: 306px;
+}
+//main-request
+.main-request{
+    width: 100%;
+    background-color: $color-dark;
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    & p{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 150%;
+        color: $color-text;
+        margin-bottom: 5%;
+    }
+    & button{
+        width: 40%;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-text;
+        background: $color-dark;
+        border: 2px solid $color-text;
+        cursor: pointer;
+    }
+    & button:hover{
+        background-color: $color-text;
+        color: $color-dark;
+        transition: all 1s;
+    }
+}
+
+//contacts
+.contacts{
+    margin-top: 10%;
+    &__row1{
+        display: flex;
+        justify-content: space-between;
+        &__contact{
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60px;
+            &__name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 150%;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $color-textContacts;
+            }
+            &__tel{
+                & a{
+                    text-decoration: none;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $color-darkContact;
+                }
+            }
+        }
+    }
+    &__row2{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        &__contact{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50px;
+            &__name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 150%;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $color-textContacts;
+            }
+            &__tel{
+                & a{
+                    text-decoration: none;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $color-darkContact;
+                }
+            }
+        }
+    }
+}
+
+//footer
+.footer{
+    margin-top: 8%;
+    width: 100%;
+    height: 60px;
+    border: 1px solid $color-line;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-darkContact;
+        padding: 0 10% 0 10%;
+    }
+    &__conf{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+//forms
+.order{
+    position: fixed;
+    background: $color-background;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    &__form{
+        background-color: $color-dark;
+        width: 50%;
+        height: 570px;
+        position: fixed;
+        top: calc(50% - 285px);
+        left: 25%;
+        & img{
+            width: 4%;
+            transform: translate(2350%, 50%);
+            cursor: pointer;
+        }
+        &__label{
+            &__check{
+                & label{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 17px;
+                    color: $color-text;
+                }
+                
+                text-align: center;
+                margin-top: 2%;
+            }
+            &__contacts{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                width: 80%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                &__name{
+                    width: 45%;
+                    height: 40px;
+                    background: $color-text;
+                    border: 2px solid $color-text;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.05em;
+                    color: $color-form;
+                    padding-left: 2%;
+                }
+                &__tel{
+                    width: 45%;
+                    height: 40px;
+                    background: $color-text;
+                    border: 2px solid $color-text;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-left: 2%;
+                    letter-spacing: 0.05em;
+                    color: $color-form;
+                }
+            }
+            &__ar{
+                width: 78%;
+                display: block;
+                margin: 0 auto;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.05em;
+                color: $color-form;
+                padding-left: 2%;
+                padding-top: 2%;
+            }
+            & button{
+                display: block;
+                margin: 0 auto;
+                margin-top: 5%;
+                width: 30%;
+                height: 50px;
+                text-align: center;
+                background: $color-dark;
+                border: 2px solid $color-text;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $color-text;
+                cursor: pointer;
+            }
+            & button:hover{
+                background-color: $color-text;
+                color: $color-dark;
+                transition: all 1s;
+            }
+        }
+    }
+}
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: $color-text;
+    margin-top: 2%;
+}
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: $color-text;
+}
+
+//modal
+.modal{
+    position: fixed;
+    background: $color-background;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    &__servis{
+        background-color: $color-dark;
+        width: 60%;
+        position: fixed;
+        top: calc(50% - 300px);
+        left: 20%;
+        // max-height: 100vh;
+        &__close{
+            width: 4%;
+            transform: translate(2350%, 50%);
+            cursor: pointer;
+        }
+        &__about{
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+            display: block;
+        }
+        & p{
+            display: block;
+            position: relative;
+            width: 90%;
+            height: 70%;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            color: $color-text;
+            font-style: normal;
+            left: 5%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+    }
+}
+.hamburger{
+    background-color: $color-dark;
+    position: absolute;
+    padding: 40px;
+    opacity: 0;
+    display: none;
+    z-index: 1;
+    &__number-two{
+        padding: 10px 20px 0 20px;
+        &__tel{
+            color: $color-text;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+    &__number-one__tel{
+        color: $color-text;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 10px 20px 0 20px;
+    }
+    &__menu {
+        text-decoration: none;
+        list-style-type: none;
+        & li {
+            padding: 10px 20px 0 20px;
+            & a{
+                color: $color-text;
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+            }
+            }
+        
+    }
+    &__vk{
+        padding: 10px 20px 0 20px;
+    }
+}
+
+.hamburger-btn{
+    position: absolute;
+    background-color: transparent;
+    & hr{
+        height: 3.5px;
+        background-color: $color-dark;
+        margin-bottom: 2.5px;
+        border: none;
+        border-radius: 10px;
+    }
+    margin-right: 10%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    left: 3%;
+    top: 1.5%;
+    display: none;
+    z-index: 2;
+}
+.hamburger-btn__hr.active{
+        height: 3.5px;
+        background-color: $color-text;
+        margin-bottom: 2.5px;
+        border: none;
+        transform: rotate(45deg) translateY(4px);
+        transition: all 1s;
+        z-index: 2;
+}
+.hamburger-btn__hr2.active{
+    height: 3.5px;
+    background-color: $color-text;
+    margin-bottom: 2.5px;
+    border: none;
+    transform: rotate(-45deg) translateY(-4px);
+    transition: all 1s;
+    z-index: 2;
+}
+
+//media-screen
+@media screen and (max-width: 1200px) {
+	.menu__post-two__post{
+        font-size: 14px;
+    }
+    .menu__post-two:hover{
+        .menu__post-two__post{
+            font-size: 14px;
+        }
+    }
+    .request__btn{
+        font-size: 14px;
+    }
+    .main-header button{
+        margin-top: 6%;
+        height: 10%;
+        font-size: 16px;
+    }
+    .contacts{
+        &__row1{
+            &__contact{
+                &__name{
+                    font-size: 9px;
+                }
+                &__tel{
+                    & a{
+                        font-size: 13px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+        &__row2{
+            
+            &__contact{
+                &__name{
+                    font-size: 9px;
+                }
+                &__tel{
+                    & a{
+                        font-size: 13px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .number-one{
+        &__tel{
+            font-size: 14px;
+        }
+    }
+    .number-two{
+        &__tel{
+            font-size: 14px;
+        }
+    }
+    .request{
+        &__btn{
+            font-size: 10px;
+        }
+    }
+    .menu{
+        &__about{
+            &__href{
+                font-size: 14px;
+            }
+        }
+        &__about:hover{
+            .menu__about__href{
+                font-size: 14px;
+            }
+        }
+        &__post-one{
+            &__post{
+                font-size: 14px;
+            }
+        }
+        &__post-one:hover{
+            .menu__post-one__post{
+                font-size: 14px;
+            }
+        }
+        &__servis{
+            &__href{
+                font-size: 14px;
+            }
+        }
+        &__servis:hover{
+            .menu__servis__href{
+                font-size: 14px;
+            }
+        }
+        &__contacts{
+            &__href{
+                font-size: 14px;
+            }
+        }
+        &__contacts:hover{
+            .menu__contacts__href{
+                font-size: 14px;
+            }
+        }
+        &__post-two{
+            &__post{
+                font-size: 11px;
+            }
+        }
+        &__post-two:hover{
+            .menu__post-two__post{
+                font-size: 11px;
+            }
+        }
+    }
+    h1{
+        font-size: 28px;
+    }
+    .main-header {
+    & p{
+        font-size: 16px;
+    }
+    & button{
+        font-size: 13px;
+    }
+    }
+    .pluses{
+        &__plus{
+            height: 280px;
+            & img{
+                width:45%;
+            }
+            &__st{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &__bg{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+    h2{
+        font-size: 35px;
+    }
+    .main-about__one{
+        &__foto1{
+            &__p2{
+                & p{
+                    line-height: 31px;
+                    font-size: 18px;
+                }
+            }
+        }
+        &__d1{
+            &__p1{
+                & p{
+                    line-height: 26px;
+                    font-size: 18px;
+                }
+            }
+            & img{
+                height: 350px;
+            }
+        }
+    }
+    .main-header{
+        padding-bottom: 4%;
+    }
+    .main-request{
+        & p{
+            font-size: 20px;
+        }
+        & button{
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .modal{
+        &__servis{
+            width: 70%;
+            left: 15%;
+            & p{
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    .order{
+        &__form{
+            width: 70%;
+            height: 570px;
+            left: 15%;
+        }
+    }
+    .contacts{
+        &__row1{
+            &__contact{
+                &__name{
+                    font-size: 7px;
+                }
+                &__tel{
+                    & a{
+                        font-size: 11px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+        &__row2{
+            
+            &__contact{
+                &__name{
+                    font-size: 7px;
+                }
+                &__tel{
+                    & a{
+                        font-size: 11px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        & p{
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+	.number-one{
+        display: none;
+    }
+    .number-two{
+        display: none;
+    }
+    .request{
+        width: 250px;
+        height: 40px;
+        &__btn{
+            font-size: 14px;
+        }
+    }
+    .vk{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 150px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    .main-header {
+    & p{
+        font-size: 16px;
+    }
+    & button{
+        font-size: 13px;
+    }
+    }
+    .pluses{
+        &__plus{
+            height: 280px;
+            & img{
+                width:45%;
+            }
+            &__st{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &__bg{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+    h2{
+        font-size: 35px;
+    }
+    .main-about__one{
+        &__foto1{
+            &__p2{
+                & p{
+                    line-height: 31px;
+                    font-size: 18px;
+                }
+            }
+        }
+        &__d1{
+            &__p1{
+                & p{
+                    line-height: 26px;
+                    font-size: 18px;
+                }
+            }
+            & img{
+                height: 350px;
+            }
+        }
+    }
+    .main-header{
+        padding-bottom: 4%;
+    }
+    .main-request{
+        & p{
+            font-size: 20px;
+        }
+        & button{
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .modal{
+        &__servis{
+            width: 70%;
+            left: 15%;
+            & p{
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    .order{
+        &__form{
+            width: 70%;
+            height: 570px;
+            left: 15%;
+        }
+    }
+    .contacts{
+        &__row1{
+            &__contact{
+                &__name{
+                    font-size: 7px;
+                }
+                &__tel{
+                    & a{
+                        font-size: 11px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+        &__row2{
+            
+            &__contact{
+                &__name{
+                    font-size: 7px;
+                }
+                &__tel{
+                    & a{
+                        font-size: 11px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        & p{
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    .header{
+        padding: 0 10% 0 15%;
+
+    }
+    .main-header {
+        & p{
+            font-size: 13px;
+        }
+        & button{
+            font-size: 11px;
+        }
+        }
+    .hamburger-btn{
+        display: block;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .pluses{
+        &__plus{
+            height: 240px;
+            & img{
+                width:40%;
+            }
+            &__st{
+                font-size: 16px;
+                line-height: 26px;
+            }
+            &__bg{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .main-request{
+        & p{
+            font-size: 16px;
+        }
+        & button{
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+    .order__form__label__contacts{
+        flex-direction: column;
+        &__name{
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        &__tel{
+            width: 100%;
+        }
+    }
+    .main-header {
+        & p{
+            font-size: 12px;
+        }
+        & button{
+            display: none;
+        }
+        }
+    h1{
+        font-size: 20px;
+    }
+    .request{
+        width: 250px;
+        height: 40px;
+        &__btn{
+            font-size: 12px;
+        }
+    }
+    .main-about__one{
+        &__foto1{
+            &__p2{
+                & p{
+                    line-height: 27px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__d1{
+            &__p1{
+                & p{
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+            }
+            & img{
+                height: 300px;
+            }
+        }
+    }
+    .modal{
+        &__servis{
+            width: 90%;
+            top: calc(50% - 300px);
+            left: 5%;
+        }
+            & p{
+                font-size: 14px;
+                line-height: 16px;
+            }
+    }
+    h4{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .order{
+        &__form{
+            &__label{
+                & button{
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width: 525px) {
+    .pluses{
+        &__plus{
+            height: 180px;
+            & img{
+                width:30%;
+            }
+            &__st{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            &__bg{
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    .main-header {
+        & p{
+            font-size: 10px;
+        }
+        & button{
+            display: none;
+        }
+        }
+    h1{
+        font-size: 18px;
+    }
+    .request{
+        width: 250px;
+        height: 40px;
+        &__btn{
+            height: 50%;
+            font-size: 10px;
+        }
+    }
+    .logo{
+        padding-top: 2%;
+        &__img{
+            width: 90%;
+        }
+    }
+    .main-about__one{
+        &__foto1{
+            &__p2{
+                & p{
+                    line-height: 27px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__d1{
+            &__p1{
+                & p{
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+            }
+            & img{
+                height: 300px;
+            }
+        }
+    }
+    h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .contacts{
+        margin-top: 10%;
+        &__row1{
+            display: block;
+            margin: 0 auto;
+            &__contact{
+                width: 70%;
+                height: 60px;
+                margin: 0 auto;
+                margin-top: 8%;
+                &__name{
+                    font-size: 11px;
+                    line-height: 150%;
+                }
+                &__tel{
+                    & a{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        &__row2{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            &__contact{
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 8%;
+                &__name{
+                    font-size: 11px;
+                    line-height: 150%;
+                }
+                &__tel{
+                    & a{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        & p{
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    .main-request{
+        & p{
+            font-size: 12px;
+        }
+        & button{
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+
+}
+@media  screen and (max-width: 400px) {
+    .pluses{
+        &__plus{
+            height: 140px;
+            & img{
+                width:30%;
+            }
+            &__st{
+                font-size: 10px;
+                line-height: 20px;
+            }
+            &__bg{
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+    }
+    .main-header {
+        & p{
+            font-size: 10px;
+        }
+        & button{
+            display: none;
+        }
+        }
+    h1{
+        font-size: 14px;
+    }
+    .request{
+        width: 250px;
+        height: 40px;
+        &__btn{
+            height: 50%;
+            font-size: 8px;
+        }
+    }
+    .logo{
+        padding-top: 3%;
+    }
+    .main-about__one{
+        &__foto1{
+            &__p2{
+                & p{
+                    line-height: 20px;
+                    font-size: 10px;
+                }
+            }
+        }
+        &__d1{
+            &__p1{
+                & p{
+                    line-height: 18px;
+                    font-size: 10px;
+                }
+            }
+            & img{
+                height: 200px;
+            }
+        }
+    }
+    h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .contacts{
+        margin-top: 10%;
+        &__row1{
+            display: block;
+            margin: 0 auto;
+            &__contact{
+                width: 70%;
+                height: 60px;
+                margin: 0 auto;
+                margin-top: 6%;
+                &__name{
+                    font-size: 9px;
+                    line-height: 150%;
+                }
+                &__tel{
+                    & a{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        &__row2{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            &__contact{
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 6%;
+                &__name{
+                    font-size: 9px;
+                    line-height: 150%;
+                }
+                &__tel{
+                    & a{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        & p{
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+    .main-request{
+        & p{
+            font-size: 10px;
+        }
+        & button{
+            height: 40px;
+            font-size: 9px;
+            line-height: 14px;
+        }
+    }
+    .servises{
+        &__servises-one{
+            &__servis{
+                height: 270px;
+                width: 80%;
+                &__floor{
+                    & p{
+                    font-size: 18px;
+                    line-height: 23px;
+                    width: 60%;
+                    }
+                    & img{
+                        width: 70%;
+                    }
+                }
+                
+            }
+        }
+    }
+    #prom{
+        width: 254.062px;
+    }
+    .order{
+        &__form{
+            width: 90%;
+            height: 530px;
+            position: fixed;
+            left: 5%;
+            &__label{
+                &__check{
+                    & label{
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .modal{
+    position: fixed;
+    background: $color-background;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    &__servis{
+        background-color: $color-dark;
+        width: 96%;
+        position: fixed;
+        top: 5%;
+        left: 2%;
+        &__close{
+            width: 4%;
+            transform: translate(2350%, 50%);
+            cursor: pointer;
+        }
+        &__about{
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+            display: block;
+        }
+        & p{
+            display: block;
+            position: relative;
+            width: 90%;
+            height: 70%;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            color: $color-text;
+            font-style: normal;
+            left: 5%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+    }
+}
+}
+@media  screen and (max-width: 375px) {
+    .pluses{
+        &__plus{
+            height: 120px;
+            & img{
+                width:30%;
+            }
+            &__st{
+                font-size: 8px;
+                line-height: 18px;
+            }
+            &__bg{
+                font-size: 8px;
+                line-height: 16px;
+            }
+        }
+    }
+    .main-header {
+        & p{
+            font-size: 8px;
+        }
+        & button{
+            display: none;
+        }
+        }
+    h1{
+        font-size: 14px;
+    }
+    .request{
+        width: 250px;
+        height: 40px;
+        &__btn{
+            height: 50%;
+            font-size: 8px;
+        }
+    }
+    .logo{
+        padding-top: 3%;
+    }
+    .main-about__one{
+        &__foto1{
+            &__p2{
+                & p{
+                    line-height: 18px;
+                    font-size: 10px;
+                }
+            }
+        }
+        &__d1{
+            &__p1{
+                & p{
+                    line-height: 18px;
+                    font-size: 10px;
+                }
+            }
+            & img{
+                height: 140px;
+            }
+        }
+    }
+    h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .contacts{
+        margin-top: 10%;
+        &__row1{
+            display: block;
+            margin: 0 auto;
+            &__contact{
+                width: 70%;
+                height: 60px;
+                margin: 0 auto;
+                margin-top: 6%;
+                &__name{
+                    font-size: 9px;
+                    line-height: 150%;
+                }
+                &__tel{
+                    & a{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        &__row2{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            &__contact{
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 6%;
+                &__name{
+                    font-size: 9px;
+                    line-height: 150%;
+                }
+                &__tel{
+                    & a{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        & p{
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+    .main-request{
+        & p{
+            font-size: 10px;
+        }
+        & button{
+            height: 40px;
+            font-size: 9px;
+            line-height: 14px;
+        }
+    }
+    .servises{
+        &__servises-one{
+            &__servis{
+                height: 230px;
+                width: 80%;
+                &__floor{
+                    & p{
+                    font-size: 12px;
+                    line-height: 17px;
+                    width: 60%;
+                    }
+                    & img{
+                        width: 70%;
+                    }
+                }
+                
+            }
+        }
+    }
+    #prom{
+        width: 80%;
+    }
+    .modal{
+    position: fixed;
+    background: $color-background;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    &__servis{
+        background-color: $color-dark;
+        width: 96%;
+        position: fixed;
+        top: 5%;
+        left: 2%;
+        &__close{
+            width: 4%;
+            transform: translate(2350%, 50%);
+            cursor: pointer;
+        }
+        &__about{
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+            display: block;
+        }
+        & p{
+            display: block;
+            position: relative;
+            width: 90%;
+            height: 70%;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.05em;
+            color: $color-text;
+            font-style: normal;
+            left: 5%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+    }
+}
+.order{
+    &__form{
+        &__label{
+            & button{
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+}
+}
+
